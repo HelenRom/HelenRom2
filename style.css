@@ -1,0 +1,48 @@
+.menu__link {
+  cursor: pointer;
+  margin: 0 10px 0 0;
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+  width: 30px;
+  height: 4px;
+  background: #616161;
+  position: relative;
+}
+
+.burger:before,
+.burger:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  background-color: #616161;
+}
+
+.burger:before {
+  top: -8px;
+}
+
+.burger:after {
+  bottom: -8px;
+}
+
+@media all and (max-width: 800px) {
+  .menu__link {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+  }
+}
+.content {
+padding-top: 10px;
+}
